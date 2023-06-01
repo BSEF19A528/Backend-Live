@@ -9,6 +9,7 @@ const app = express(); //created app variable and assigning the result of callin
 app.use(
   cors({
     "Access-Control-Allow-Origin": "*",
+    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
   })
 );
 
